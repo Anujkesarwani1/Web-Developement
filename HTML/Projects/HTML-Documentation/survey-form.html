@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-</head>     
-<body>
-    Suvery Form
-</body>
+  </head>
+  <body>
+    <font face="arial">
+      <h1 align="center">Survey Form</h1>
+      <hr />
+      <div>
+        <form action="onSubmit">
+          <label for="name">*Name: </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br /><br />
+
+          <label for="email">*Email: </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br /><br />
+
+          <label for="age">*Age: </label>
+          <input type="number" name="age" placeholder="Enter your age" />
+          <br /><br />
+
+          <label>Gender: </label>
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+          <br /><br />
+
+          <label for="role">Which option best describes you?</label>
+          <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="Intern">Intern</option>
+            <option value="professional">Working Professional</option>
+          </select>
+          <br /><br />
+
+          <label for="recommend"
+            >Would you recommend this Documentation to a friend?:
+          </label>
+          <input type="radio" name="recommend" id="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" name="recommend" id="no" />
+          <label for="no">No</label>
+          <input type="radio" name="recommend" id="maybe" />
+          <label for="maybe">May be</label>
+          <br /><br />
+
+          <label for="languages"
+            >Languages and Frameworks known
+            <small>(Check all that apply)</small></label
+          >
+          <input type="checkbox" name="languages" id="c" />
+          <label for="c">C Language</label>
+          <input type="checkbox" name="languages" id="c++" />
+          <label for="c++">C++ Language</label>
+          <input type="checkbox" name="languages" id="python" />
+          <label for="python">Python Language</label>
+          <input type="checkbox" name="languages" id="java" />
+          <label for="java">Java Language</label>
+          <input type="checkbox" name="languages" id="html" />
+          <label for="html">HTML</label>
+          <input type="checkbox" name="languages" id="css" />
+          <label for="css">CSS</label>
+          <input type="checkbox" name="languages" id="js" />
+          <label for="js">JavaScript</label>
+          <br /><br />
+
+          <label for="suggestion">Any comments or suggestions</label
+          ><br /><br />
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            cols="70"
+            rows="4"
+            placeholder="Enter your comment here"
+          ></textarea>
+
+          <br /><br />
+          <button type="submit" value="submit">Submit</button>
+        </form>
+      </div>
+    </font>
+  </body>
 </html>

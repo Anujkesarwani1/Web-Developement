@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Technical Documentation</title>
+  </head>
+  <body>
+    <font face="arial">
+      <header>
+        <h2>
+          <b>HTML Technical Documentation</b>
+        </h2>
+        <a href="#introduction">Introduction</a>
+        &nbsp;
+        <a href="#attributes">HTML Attributes</a>
+        &nbsp;
+        <a href="#imp-tags">Important Tags</a>
+        &nbsp;
+        <a href="#structure">HTML and Project Structure</a>
+        &nbsp;
+        <a href="./survey-form.html" target="_blank" rel="noreferr">Survey Form</a>
+        &nbsp;
+      </header>
+      <hr />
+      <main>
+        <section id="introduction">
+          <article id="definition">
+            <h3>What is HTML?</h3>
+            <ul>
+              <li>HTML stands for Hyper Text Markup Language</li>
+              <li>
+                HTML is the standard markup language for creating Web pages
+              </li>
+              <li>HTML describes the structure of a Web page</li>
+              <li>HTML consists of a series of elements</li>
+              <li>HTML elements tell the browser how to display the content</li>
+              <li>
+                HTML elements label pieces of content such as "this is a
+                heading", "this is a paragraph", "this is a link", etc.
+              </li>
+            </ul>
+          </article>
+
+          <article id="html-format">
+            <h3>A Simple HTML Document</h3>
+            <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+      &lt;head&gt;
+          &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;h1&gt;My First Heading&lt;/h1&gt;
+          &lt;p&gt;My first paragraph.&lt;/p&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;
+                        </pre
+            >
+            <h3>Example Explained</h3>
+            <ul>
+              <li>
+                The &lt;!DOCTYPE html&gt; declaration defines that this document
+                is an HTML5 document
+              </li>
+              <li>
+                The &lt;html&gt; element is the root element of an HTML page
+              </li>
+              <li>
+                The &lt;head&gt; element contains meta information about the
+                HTML page
+              </li>
+              <li>
+                The &lt;title&gt; element specifies a title for the HTML page
+                (which is shown in the browser's title bar or in the page's tab)
+              </li>
+              <li>
+                The &lt;body&gt; element defines the document's body, and is a
+                container for all the visible contents, such as headings,
+                paragraphs, images, hyperlinks, tables, lists, etc.
+              </li>
+              <li>The &lt;h1&gt; element defines a large heading</li>
+              <li>The &lt;p&gt; element defines a paragraph</li>
+            </ul>
+          </article>
+
+          <article id="comments">
+            <h3>Comments</h3>
+            <ul>
+              <li>Used a add <b>notes</b> in HTML code</li>
+              <li><b>Not displayed</b> on the web page</li>
+              <li>
+                Syntax:
+                <b>&lt;!--Comment here --&gt;</b>
+              </li>
+              <li>
+                Helpful for
+                <b>code organization</b>
+              </li>
+              <li>
+                Can be <b>multi-line</b> or
+                <b>single-line</b>
+              </li>
+            </ul>
+          </article>
+
+          <article id="case-sensitivity">
+            <h3>Case Sensitivity</h3>
+            <ul>
+              <li>HTML is <b>case-insensitive</b> for tag names</li>
+              <li>Attributes names are also be case-insensitive</li>
+              <li>Best practice: <i>use lowercase</i> for consistency</li>
+            </ul>
+          </article>
+
+          <article id="attributes">
+            <h3>HTML Attributes</h3>
+            <table>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Provides
+                      <b>additional information</b>
+                      about elements
+                    </li>
+                    <li>Placed within opening tags</li>
+                    <li>
+                      Common examples:
+                      <em>href, src, alt</em>
+                    </li>
+                    <li>
+                      Use
+                      <b>name=value format</b>
+                    </li>
+                    <li>Can be <b>single</b> or <b>multiple</b> per element</li>
+                  </ul>
+                </td>
+                <td>
+                  <img
+                    src="./attributes.png"
+                    alt="attributes"
+                    height="150"
+                    width="300"
+                  />
+                </td>
+              </tr>
+            </table>
+          </article>
+
+          <article id="imp-tags">
+            <h3>Some must used tags</h3>
+            <table border="1">
+              <tr>
+                <th>Heading Tag</th>
+                <td>
+                  <ul>
+                    <li>Defines <b>headings</b> in a document</li>
+                    <li>
+                      Ranges from <b>&lt;h1&gt;</b> to
+                      <b>&lt;h6&gt;</b>
+                    </li>
+                    <li>
+                      <b>&lt;h1&gt;</b> is most important,
+                      <b>&lt;h6&gt;</b>
+                      is least
+                    </li>
+                    <li>
+                      Important for
+                      <b>SEO</b>
+                    </li>
+                    <li>Helps in Structuring content</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Paragraph Tag</th>
+                <td>
+                  <ul>
+                    <li>
+                      Used for defininig
+                      <b>paragraphs</b>
+                    </li>
+                    <li>
+                      Enclosed within
+                      <b>&lt;p&gt;</b> and
+                      <b>&lt;/p&gt;</b>
+                    </li>
+                    <li>Adds <b>automtic spacing</b> before and after</li>
+                    <li><b>Text wraps</b> to next line inside tag</li>
+                    <li>Common in text-heavy content</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>&lt;BR&gt; Tag</th>
+                <td>
+                  <ul>
+                    <li>
+                      <b>&lt;br&gt;</b> adds a
+                      <b>line break within text</b>
+                    </li>
+                    <li><b>&lt;br&gt;</b> is empty, no closing tag needed</li>
+                    <li><b>&lt;br&gt;</b> and <b>&lt;/br&gt;</b> both valid</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>&lt;HR&gt; Tag</th>
+                <td>
+                  <ul>
+                    <li>
+                      <b>&lt;hr&gt;</b> creates a
+                      <b>horizontal rule</b>
+                      or line
+                    </li>
+                    <li><b>&lt;hr&gt;</b> also empty, acts as divider</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Image Tag</th>
+                <td>
+                  <ul>
+                    <li>
+                      Used to embed
+                      <b>images</b>
+                    </li>
+                    <li>Utilizes the <b>src</b> attributes for image URL</li>
+                    <li><b>alt</b> attribute for alternative text</li>
+                    <li>
+                      Can be resized using <b>width</b> and
+                      <b>height</b>
+                    </li>
+                    <li><b>Self-closing</b>, doesn't require an end tag</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Video Tag</th>
+                <td>
+                  <ul>
+                    <li>Embed video files on a pages</li>
+                    <li>Usese <b>src</b> attribute for video URL</li>
+                    <li>Supports <b>multiple formats</b> like MP4, WebM</li>
+                    <li>
+                      Allows for built-in controls via attributes like
+                      <b>autoplay, controls, loop</b>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Bold / Italic / Underline / Strikethrough Tag</th>
+                <td>
+                  <ul>
+                    <li><b>&lt;b&gt;</b> makes text <b>bold</b></li>
+                    <li><b>&lt;i&gt;</b> makes text <i>italic</i></li>
+                    <li><b>&lt;u&gt;</b> underlines <u>text</u></li>
+                    <li>
+                      <b>&lt;s&gt;</b> or <b>&lt;strike&gt;</b> applies
+                      <b>strikethrough</b>
+                    </li>
+                    <li>Primary used for text styling and emphasis</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Pre Tag</th>
+                <td>
+                  <ul>
+                    <li><b>Preserves text formatting</b></li>
+                    <li>Maintains <b>whitespaces</b> and <b>line breaks</b></li>
+                    <li>Useful for displaying code</li>
+                    <li>
+                      Enclosed within <b>&lt;pre&gt;</b> and
+                      <b>&lt;/pre&gt;</b> tags
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Big / Small Tag</th>
+                <td>
+                  <ul>
+                    <li><b>&lt;big&gt;</b> increases text size</li>
+                    <li><b>&lt;small&gt;</b> decreases text size</li>
+                    <li>Less common due to CSS alternatives</li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <th>Superscript / Subscript Tag</th>
+                <td>
+                  <ul>
+                    <li><b>&lt;sup&gt;</b> makes text superscript</li>
+                    <li><b>&lt;sub&gt;</b> makes text subscript</li>
+                    <li>Used for <b>mathematical equations, footnotes</b></li>
+                    <li>Does <b>not change font size</b>, just position</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </article>
+        </section>
+
+
+        <section id="structure">
+          <article id="html-structure">
+            <br /><br />
+            <table border="1">
+              <caption>
+                Semantic vs Non-Semantic
+              </caption>
+              <tr>
+                <th>Semantic Tags</th>
+                <th>Non-Semantic Tags</th>
+              </tr>
+              <tr>
+                <td><b>Meaningful:</b> Describe content.</td>
+                <td><b>Generic:</b> No specific meaning.</td>
+              </tr>
+              <tr>
+                <td><b>SEO:</b> Good for search engines.</td>
+                <td><b>For Styling:</b> Used for layout.</td>
+              </tr>
+              <tr>
+                <td><b>Accessibility:</b> Useful for screen readers.</td>
+                <td><b>No SEO:</b> Not SEO-friendly.</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Examples:</b> &lt;header&gt;, &lt;footer&gt;,
+                  &lt;article&gt;, &lt;section&gt;, &lt;nav&gt;
+                </td>
+                <td>
+                  <b>Examples:</b> &lt;div&gt;, &lt;span&gt;, &lt;i&gt;,
+                  &lt;b&gt;
+                </td>
+              </tr>
+            </table>
+            <br>
+            <h3>HTML and Project Structue</h3>
+            <img src="./htmlstructure.jpg"  alt="HTML Project Structure" height="600" width="600">
+          </article>
+        </section>
+      </main>
+      <hr />
+      <footer>
+        <marquee behavior="alternate" direction="right"
+          >Thanks for Read</marquee
+        >
+      </footer>
+    </font>
+  </body>
+</html>

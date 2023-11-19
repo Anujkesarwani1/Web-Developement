@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+#heading {
+    color: blue;
+}
+
+#div {
+    color: rgb(216, 140, 27);
+}
+
+.para {
+    color: blueviolet;
+}
+
+h3 {
+    color: burlywood;
+}
+
+#first, #second {
+    color: darkblue;
+}
